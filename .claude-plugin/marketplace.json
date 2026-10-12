@@ -1,0 +1,24 @@
+{
+  "name": "laxpud-agent-task-resume",
+  "description": "Explicitly invoked guidance for resuming authorized work after short-term or weekly quota recovery, with execution tracking and permission-bound reset credits.",
+  "owner": {
+    "name": "Laxpud"
+  },
+  "plugins": [
+    {
+      "name": "agent-task-resume",
+      "description": "Explicitly invoked guidance for resuming authorized work after short-term or weekly quota recovery, with execution tracking and permission-bound reset credits.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Laxpud"
+      },
+      "source": "./",
+      "category": "workflow",
+      "tags": [
+        "continuation",
+        "quota",
+        "scheduling"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "marketplace": {
+    "id": "laxpud-agent-task-resume",
+    "displayName": "Agent Task Resume",
+    "description": "Explicitly invoked guidance for resuming authorized work after short-term or weekly quota recovery, with execution tracking and permission-bound reset credits.",
+    "owner": "Laxpud"
+  },
+  "publisher": {
+    "name": "Laxpud",
+    "url": "https://github.com/Laxpud",
+    "homepage": "https://github.com/Laxpud/agent-task-resume",
+    "repository": "https://github.com/Laxpud/agent-task-resume",
+    "license": "MIT"
+  },
+  "plugins": [
+    {
+      "id": "agent-task-resume",
+      "directory": ".",
+      "version": "0.1.0",
+      "description": "Explicitly invoked guidance for resuming authorized work after short-term or weekly quota recovery, with execution tracking and permission-bound reset credits.",
+      "category": "Productivity",
+      "keywords": [
+        "continuation",
+        "quota",
+        "scheduling",
+        "automation"
+      ],
+      "skills": [
+        {
+          "id": "quota-resume",
+          "path": "skills/quota-resume"
+        }
+      ],
+      "platforms": {
+        "codex": {
+          "installation": "AVAILABLE",
+          "authentication": "ON_INSTALL",
+          "displayName": "Agent Task Resume",
+          "shortDescription": "Resume authorized work after quota recovery",
+          "longDescription": "Create or repair continuation schedules with five-hour and weekly quota checks, existing-session routing, execution tracking, and duplicate prevention. Use reset credits only within explicit user authorization and stop on completion or required user action. Includes Codex and Linux systemd guidance; installation alone starts no scheduler.",
+          "defaultPrompt": [
+            "Use $agent-task-resume:quota-resume to schedule this authorized task to resume after its five-hour quota recovers, track execution, and stop on completion or required user action."
+          ]
+        },
+        "claude": {
+          "category": "workflow",
+          "tags": [
+            "continuation",
+            "quota",
+            "scheduling"
+          ]
+        }
+      }
+    }
+  ]
+}
